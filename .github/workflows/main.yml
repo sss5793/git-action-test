@@ -22,4 +22,4 @@ jobs:
     - name: public
       run: |
         cd public
-        touch text.txt
+        pwd
