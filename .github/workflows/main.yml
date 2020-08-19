@@ -22,4 +22,4 @@ jobs:
     - name: public
       run:  |
           touch hello.txt
-          pwd > hello.txt
+      working-directory: project/git-action-test/public
