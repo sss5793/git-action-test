@@ -18,9 +18,7 @@ jobs:
         script: |
           cd project/git-action-test
           git pull origin master
-          cd public
-          touch hello.txt
           
     - name: public
-      run: |
-        touch hello.txt
+      run: npm init
+      working-directory: ./project/git-action-test/public
