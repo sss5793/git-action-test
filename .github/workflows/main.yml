@@ -21,5 +21,4 @@ jobs:
           
     - name: public
       run: |
-        cd project/git-action-test/public
         touch hello.txt
