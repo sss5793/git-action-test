@@ -18,8 +18,7 @@ jobs:
         script: |
           cd project/git-action-test
           git pull origin master
-          
-    - name: public
-      run: |
-        cd public
-        pwd
+          cd public
+          touch text.txt
+          cd ..
+          touch test.txt
