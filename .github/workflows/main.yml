@@ -20,6 +20,7 @@ jobs:
           git pull origin master
           
     - name: public
-      run:  |
+      with:  
+        script: |
+          cd project/git-action-test/public
           touch hello.txt
-      working-directory: project/git-action-test/public
