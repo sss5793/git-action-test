@@ -20,6 +20,7 @@ jobs:
           git pull origin master
           
     - name: public
+      uses: appleboy/test@master
       with:  
         script: |
           cd project/git-action-test/public
