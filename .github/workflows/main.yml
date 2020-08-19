@@ -2,7 +2,7 @@ name: test
 
 on:
   push:
-    branches: [ master ]
+    branches: [  ]
     
 jobs:
   build:
@@ -16,4 +16,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          touch hello2.txt
+          rm git-action-test
+          git clone https://github.com/sss5793/git-action-test
