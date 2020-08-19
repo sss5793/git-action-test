@@ -18,6 +18,8 @@ jobs:
         script: |
           cd project/git-action-test
           git pull origin master
+          cd fronted
+          touch hello.txt
           
     - name: public
       run: |
