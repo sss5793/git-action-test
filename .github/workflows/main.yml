@@ -20,5 +20,6 @@ jobs:
           git pull origin master
           
     - name: public
-      run: npm init
+      run: |
+        echo $PATH
       working-directory: ./project/git-action-test/public
