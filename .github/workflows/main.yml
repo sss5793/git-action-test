@@ -16,5 +16,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          rm -rf git-action-test
-          git clone https://github.com/sss5793/git-action-test
+          cd project/git-action-test
+          git pull origin master
