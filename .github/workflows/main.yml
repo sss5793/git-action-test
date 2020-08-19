@@ -22,4 +22,4 @@ jobs:
     - name: public
       run: |
         cd public
-        echo $PATH
+        touch text.txt
