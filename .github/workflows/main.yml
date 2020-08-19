@@ -18,3 +18,8 @@ jobs:
         script: |
           cd project/git-action-test
           git pull origin master
+          
+    - name: public
+      run:  |
+          cd project/git-action-test/public
+          touch hello.txt
